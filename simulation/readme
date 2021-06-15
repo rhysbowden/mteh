@@ -1,3 +1,11 @@
 This folder contains files for running the simulation comparisons to lme4 fitting for the paper "Inference for the treatment effect in longitudinal cluster randomized trials when treatment effect heterogeneity is ignored" by Rhys Bowden, Andrew Forbes and Jessica Kasza.
 
-Place all files in the same directory. The main file is msteh4.R. The relevant results variables are: bar_hat_var_theta_hatMS which gives the empirical mean of the estimated variance of the treatment effect estimator; and th_misspec_var which gives the theoretical approximation to that value for the estimator given in the paper. These are vectors, one value for each tuple of parameters. 
+Place all files in the same directory.
+
+msteh4.R: Main file. 
+The relevant results variables are: bar_hat_var_theta_hatMS which gives the empirical mean of the estimated variance of the treatment effect estimator; and th_misspec_var which gives the theoretical approximation to that value for the estimator given in the paper. These are vectors, one value for each tuple of parameters. 
+
+msteh_disinv.R:
+Disinvestment in weekend allied health services example. 
+Uses data from T. P. Haines et al., Impact of disinvestment from weekend allied health services across acute medical and surgical wards: 2 stepped-wedge cluster randomised controlled trials, https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002412#sec019
+Requires an xlsx of the patient-level data to be in the same directory, https://doi.org/10.1371/journal.pmed.1002412.s002
